@@ -11,13 +11,13 @@ import co.edu.unbosque.modelo.Cliente;
 import co.edu.unbosque.repositorio.ClienteRepositorio;
 
 @RestController //API REST
-@RequestMapping("/api/v1/")
+@RequestMapping("cliente")
 public class ClienteControlador {
 	
 	@Autowired
 	private ClienteRepositorio repositorio;
 	
-	@GetMapping("/clientes")
+	@GetMapping("/listar") //Método mapeado con "/listar"
 	public List<Cliente> listarTodosClientes(){
 		return repositorio.findAll();
 	}
