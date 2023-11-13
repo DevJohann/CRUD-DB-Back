@@ -22,6 +22,9 @@ public class Cliente {
 	@Column(name = "id_tipo_cliente", nullable = false)
 	private long id_tipo_cliente;
 	
+	@Column(name = "id_vuelo", nullable = false)
+	private long id_vuelo;
+	
 	public Cliente() {
 
 	}
@@ -73,6 +76,18 @@ public class Cliente {
 
 	public void setId_tipo_cliente(long id_tipo_cliente) {
 		this.id_tipo_cliente = id_tipo_cliente;
+	}
+
+	public long getId_vuelo() {
+		return id_vuelo;
+	}
+
+	public void setId_vuelo(long id_vuelo) {
+		this.id_vuelo = id_vuelo;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
 	}
 	
 	

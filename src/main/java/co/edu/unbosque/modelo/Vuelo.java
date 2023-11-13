@@ -21,9 +21,6 @@ public class Vuelo {
 	@Column(name = "referencia")
 	private Integer referencia;
 	
-	@Column(name = "id_avion")
-	private Integer id_avion;
-	
 	@Column(name = "fecha_salida")
 	private Date fecha_salida;
 	
@@ -47,7 +44,6 @@ public class Vuelo {
 			Integer cupo, Integer peso_max, Integer maletas_max) {
 		this.id_vuelo = id_vuelo;
 		this.referencia = referencia;
-		this.id_avion = id_avion;
 		this.fecha_salida = fecha_salida;
 		this.fecha_llegada = fecha_llegada;
 		this.cupo = cupo;
@@ -69,14 +65,6 @@ public class Vuelo {
 
 	public void setReferencia(Integer referencia) {
 		this.referencia = referencia;
-	}
-
-	public Integer getId_avion() {
-		return id_avion;
-	}
-
-	public void setId_avion(Integer id_avion) {
-		this.id_avion = id_avion;
 	}
 
 	public Date getFecha_salida() {

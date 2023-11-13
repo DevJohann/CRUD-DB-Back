@@ -7,5 +7,5 @@ import co.edu.unbosque.modelo.Usuario;
 
 @Repository
 public interface UsuarioRepositorio extends JpaRepository<Usuario, Long>{
-
+	Usuario findByUsername(String username);
 }
