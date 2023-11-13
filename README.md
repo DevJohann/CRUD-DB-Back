@@ -18,7 +18,7 @@
     </tr>
     <tr>
       <td>/vuelo/guardar</td>
-      <td>Receives an object of the entity in the response header and saves it in the database</td>
+      <td>Receives an object of the entity in the request body and saves it in the database</td>
     </tr>
     <tr>
       <td>/vuelo/{id}</td>
