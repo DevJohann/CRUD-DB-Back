@@ -25,17 +25,21 @@ public class Cliente {
 	@Column(name = "id_vuelo", nullable = false)
 	private long id_vuelo;
 	
+	@Column(name = "confirmado", nullable = false)
+	private boolean confirmado;
+	
 	public Cliente() {
 
 	}
 
-	public Cliente(long id, String nombre, String apellido, String correo, long id_tipo_cliente) {
+	public Cliente(long id, String nombre, String apellido, String correo, long id_tipo_cliente, boolean confirmado) {
 		super();
 		this.id = id;
 		this.nombre = nombre;
 		this.apellido = apellido;
 		this.correo = correo;
 		this.id_tipo_cliente = id_tipo_cliente;
+		this.confirmado = confirmado;
 	}
 
 	public long getId() {
@@ -88,6 +92,14 @@ public class Cliente {
 
 	public void setId(Long id) {
 		this.id = id;
+	}
+
+	public boolean isConfirmado() {
+		return confirmado;
+	}
+
+	public void setConfirmado(boolean confirmado) {
+		this.confirmado = confirmado;
 	}
 	
 	
